@@ -7,6 +7,8 @@ public class Assignment1{
         String pattern = "";
 
         //Pattern 1
+
+        System.out.println("1)");
         
         for(int i = 0; i < 4; i++){
             pattern += '*';
@@ -15,6 +17,8 @@ public class Assignment1{
         System.out.println(".........\n");
 
         //Pattern 2
+
+        System.out.println("2)");
 
         System.out.println("..........");
 
@@ -25,6 +29,8 @@ public class Assignment1{
         System.out.println();
 
         //Pattern 3
+
+        System.out.println("3)");
 
         pattern = "*";
 
@@ -37,6 +43,8 @@ public class Assignment1{
 
         //Pattern 4
 
+        System.out.println("4)");
+        
         spaces += ' ';
 
         System.out.println("............");

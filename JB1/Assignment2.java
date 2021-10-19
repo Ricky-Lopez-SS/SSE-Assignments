@@ -13,14 +13,31 @@ public class Assignment2 {
         System.out.println("Please guess a number between 1 and 100.");
 
         while(scnnr.hasNextLine()){
+
             try{
                 input = Integer.parseInt(scnnr.next());
             }catch(NumberFormatException e){ //input was not a numerical integer value.
+
+                invalidCounter++;
+                if(invalidCounter >= 5){
+                    System.out.format("Sorry, the correct answer was %d.", answer);
+                    scnnr.close();
+                    return;
+                }
+                
                 System.out.println("Please enter a valid number between 1 and 100.");
                 continue;
             }
 
             if(input > 100 || input < 1){ //input was not within 1-100. 
+
+                invalidCounter++;
+                if(invalidCounter >= 5){
+                    System.out.format("Sorry, the correct answer was %d.", answer);
+                    scnnr.close();
+                    return;
+                }
+                
                 System.out.println("Please enter a valid number between 1 and 100.");
                 continue;
             }
@@ -32,7 +49,7 @@ public class Assignment2 {
             }
            
             invalidCounter++;
-            if(invalidCounter == 5){
+            if(invalidCounter >= 5){
                 System.out.format("Sorry, the correct answer was %d.", answer);
                 scnnr.close();
                 return;
