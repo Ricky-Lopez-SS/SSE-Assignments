@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.Random;
 
+/**
+ * @author Ricky Lopez
+ */
+
 public class Assignment2 {
 
     public static void main(String[] args){
