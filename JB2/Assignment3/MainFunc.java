@@ -12,8 +12,13 @@ public class MainFunc {
         triangle.display();
         */
 
+        /*
         Circle circle = new Circle(50);
         circle.display();
+        */
+
+        Square square = new Square(50);
+        square.display();
     }
     
 
