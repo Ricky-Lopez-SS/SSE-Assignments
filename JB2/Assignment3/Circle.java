@@ -29,6 +29,8 @@ public class Circle implements Shape {
         frame.add(new CirclePaintComponent(this.diameter));
         frame.setVisible(true);
 
+        System.out.format("Area is: %f%n" , calculateArea());
+
 
     }
 

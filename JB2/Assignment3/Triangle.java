@@ -18,6 +18,11 @@ public class Triangle implements Shape {
         this.length = length;
         this.height = height;
     }
+
+    @Override
+    public double calculateArea(){
+        return this.length * this.height / 2;
+    }
   
     @Override
     public void display(){
@@ -28,12 +33,11 @@ public class Triangle implements Shape {
         frame.setSize(500, 500);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        System.out.format("Area is: %f%n" , this.calculateArea());
     }
 
-    @Override
-    public double calculateArea(){
-        return 1/2 * length * height;
-    }
+
 
     class TrianglePaintComponent extends Component{
 

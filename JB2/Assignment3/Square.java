@@ -29,6 +29,8 @@ public class Square implements Shape {
         frame.add(new SquarePaintComponent(length));
         frame.setVisible(true);
 
+        System.out.format("Area is: %f", calculateArea());
+
     }
 
     @Override
