@@ -47,6 +47,7 @@ public class Main {
 
             Square square = new Square(length);
             square.display();
+
         }else if(input.equals("circle")){
 
             System.out.println("Please specify an integer diameter length between 10 and 200. (WARNING: higher values may not appear completely on the display!)\n ");
@@ -63,8 +64,10 @@ public class Main {
                 break;
 
             }
+
             Circle circle = new Circle(length);
             circle.display();
+
         }else if(input.equals("triangle")){
 
             System.out.println("Please specify an integer base length between 10 and 400.\n");
@@ -101,6 +104,8 @@ public class Main {
             Triangle triangle = new Triangle(length, height);
             triangle.display();
         }
+
+        scnnr.close();
         
 
     }
