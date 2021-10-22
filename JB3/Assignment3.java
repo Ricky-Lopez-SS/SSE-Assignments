@@ -13,8 +13,6 @@ public class Assignment3 {
     
     public static void main(String[] args){
 
-        
-
         System.out.println("Please enter the path of the file.");
 
         int counter = 0;
@@ -30,11 +28,15 @@ public class Assignment3 {
             System.out.println("Sorry, this file either does not exist, or cannot be read. Please try again.");
             scnnr.close();
             return;
-        } 
+        }
 
-        System.out.println("Please enter that character sequence you would like to search for.");
+        if(args.length == 0){
 
-        if(scnnr.hasNext()) input = scnnr.next();
+            System.out.println("Please enter that character sequence you would like to search for.");
+            if(scnnr.hasNext()) input = scnnr.next();
+        }else{
+            input = args[0];
+        }
 
         scnnr.close();
 
@@ -49,7 +51,8 @@ public class Assignment3 {
             return;
         }
 
-        System.out.format("This file has %d occurrences of this sequence.%n", counter);
+        if(counter == 0) System.out.println("This file has no occurrences of this sequence.");
+        else System.out.format("This file has %d occurrences of this sequence.%n", counter);
 
     }
 }
