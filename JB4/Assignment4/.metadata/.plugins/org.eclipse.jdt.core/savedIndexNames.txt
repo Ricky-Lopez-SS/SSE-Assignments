@@ -1,0 +1,16 @@
+INDEX VERSION 1.131+C:\Users\Lopez\Documents\Scripts\SmoothStack\SSE-Assignments\JB4\Assignment4\.metadata\.plugins\org.eclipse.jdt.core
+30350687.index
+546651326.index
+3095515536.index
+1744683363.index
+3688064766.index
+345465424.index
+3511183071.index
+2216973538.index
+3720717641.index
+1167670216.index
+2388147226.index
+3544853189.index
+980765946.index
+2399082724.index
+3231410295.index
