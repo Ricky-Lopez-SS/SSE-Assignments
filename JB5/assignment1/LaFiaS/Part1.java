@@ -63,6 +63,8 @@ public class Part1 {
 			}
 		} else
 			System.out.println("Sorry, I did not quite catch that. Please try rerunning the program.");
+		
+		scnnr.close();
 
 	}
 

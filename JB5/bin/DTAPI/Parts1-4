@@ -1,0 +1,8 @@
+1. Which class would you use to store your birthday in years, months, days, seconds, and nanoseconds?
+	a) 
+
+2. Given a random date, how would you find the date of the previous Thursday?
+
+3. What is the difference between a ZoneId and a ZoneOffset?
+
+4. How would you convert an Instant to a ZonedDateTime? How would you convert a ZonedDateTime to an Instant?
