@@ -1,3 +1,4 @@
+package assign2;
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;

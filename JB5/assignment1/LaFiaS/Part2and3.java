@@ -15,7 +15,7 @@ public class Part2and3 {
 
 	public static void main(String[] args) {
 
-		List<Integer> numList = Arrays.asList(5, 3, 85, 23, 92, 944, 1, 19, 43, 22, 76, 90);
+		List<Integer> numList = Arrays.asList(5, 3, 85, 23, 92, 944, 1, 19, 43, 22, 76, 90, 0);
 		
 		List<String> nameList = Arrays.asList( "Steve", "Carol", "Benjamin", "Marcus", "Cole" , "add", "aim", "aid" , "adam" , "con" , "Ace");
 
@@ -30,8 +30,8 @@ public class Part2and3 {
 
 		return list.stream().map((x) -> {
 			if (x % 2 == 0)
-				return x.toString() + 'e';
-			return x.toString() + 'o';
+				 return 'e' + x.toString();
+			return 'o' + x.toString();
 		}).reduce("", (substring, nextString) -> substring + nextString + ", ");
 
 	}

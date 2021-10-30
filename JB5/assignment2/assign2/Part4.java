@@ -1,3 +1,4 @@
+package assign2;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,11 +17,13 @@ public class Part4 {
 		
 		List<String> exampleList = Arrays.asList("xylophone", "extrapolate", "polar bear", "koauh", "hawaii", "xerox");
 		
+		System.out.println("Example list: " + exampleList);
+		
 		noXInt noX = (x) -> x.stream().map((y) -> y.replaceAll("x", "")).collect(Collectors.toList());
 		
 		List<String> result = noX.noXFunc(exampleList);
 		
-		System.out.println(result);
+		System.out.println("results: " + result);
 		
 		
 	}

@@ -48,11 +48,11 @@ public class Part1 {
 			if (scnnr.hasNext())
 				input = scnnr.nextLine().toLowerCase();
 
-			if (input.equals("yes")) {
+			if (input.equals("yes")) { //with static helper method
 				Arrays.sort(nameArray, Comparator.comparingInt(Helper::order));
 				Arrays.asList(nameArray).stream().forEach(System.out::println);
 
-			} else {
+			} else { //without static helper method.
 				names.stream().sorted(Comparator.comparingInt((s) -> {
 					if (s.contains("e")) {
 						return -1;
