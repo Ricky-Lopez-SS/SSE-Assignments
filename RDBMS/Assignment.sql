@@ -21,6 +21,7 @@ ON tbl_library_branch.branchId = info.branchId;
 
 
 #Question 3
+#Yields the names of all borrowers who do not have any books checked out.
 SELECT name from tbl_borrower
 	WHERE name NOT IN (SELECT tbl_borrower.name FROM tbl_book_loans
 	INNER JOIN tbl_borrower ON tbl_borrower.cardNo = tbl_book_loans.cardNo);
